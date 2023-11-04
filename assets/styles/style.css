@@ -14,12 +14,18 @@
     url("/assets/images/image\ 3\ \(1\).png") center/cover no-repeat;
 }
 .fleets {
+  height: 800px;
+  width: 300px;
   width: 100%;
   padding-block: 50px;
 }
 .fleet-card {
   width: 300px;
   height: 300px;
+}
+.fleet-card img {
+  display: block;
+  width: 100%;
 }
 .swiper-pagination-bullet {
   background-color: #f8d7a4;

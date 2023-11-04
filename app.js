@@ -35,31 +35,31 @@ multi.addEventListener("click", () => {
   hr.classList.replace("hr-single", "hr-multi");
 });
 
-// var swiper = new Swiper(".fleets", {
-//   effect: "coverflow",
-//   grabCursor: true,
-//   centeredSlides: true,
-//   slidesPerView: "1",
-//   loop: true,
-//   looFillGroupWithBlank: true,
-//   coverflowEffect: {
-//     rotate: 50,
-//     strectch: 0,
-//     depth: 100,
-//     modifier: 1,
-//     slideShadows: true,
-//   },
-//   pagination: {
-//     el: ".swiper-pagination",
-//     clickable: true,
-//     dynamicBullets: true,
-//   },
-//   breakpoints: {
-//     0: {
-//       slidesPerView: 1,
-//     },
-//   },
-// });
+var swiper = new Swiper(".fleets", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "1",
+  loop: true,
+  looFillGroupWithBlank: true,
+  coverflowEffect: {
+    rotate: 50,
+    strectch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+  },
+});
 
 // Tile Calculator
 
