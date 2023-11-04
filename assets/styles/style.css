@@ -1,0 +1,64 @@
+#services {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/assets/images/image 3.png") center/cover fixed no-repeat;
+}
+#Testimonial1,
+#Testimonial2,
+#Testimonial3 {
+  accent-color: #a55c30;
+}
+.cta {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/assets/images/image\ 3\ \(1\).png") center/cover no-repeat;
+}
+.fleets {
+  width: 100%;
+  padding-block: 50px;
+}
+.fleet-card {
+  width: 300px;
+  height: 300px;
+}
+.swiper-pagination-bullet {
+  background-color: #f8d7a4;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: #a55c30;
+}
+.my-table tr:nth-child(even) {
+  background: #f2f2f2;
+}
+.my-table th,
+.my-table td,
+.result-table th,
+.result-table td {
+  border: 1px solid #f0c29c;
+  padding-inline: 2px;
+  padding-block: 1rem;
+}
+.result-table tr:nth-child(even) {
+  background: #f2f2f2;
+}
+#single-result,
+.result-table td {
+  color: hsl(25, 71%, 57%);
+}
+
+.hero {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/assets/images/tile2.jpg) center/cover fixed no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.result {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/assets/images/tile10.jpg) center/cover no-repeat;
+}

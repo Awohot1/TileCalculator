@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .show-nav {
+    @apply w-72 h-[400px] absolute right-0 top-10 flex items-center;
+  }
+  .btn {
+    @apply capitalize bg-gradient-to-r from-clr-heading to-clr-tertiary w-32 p-2 text-white rounded-md max-w-xs hover:text-clr-text mb-3;
+  }
+  .warning {
+    @apply text-red-900 text-sm italic;
+  }
+  .hr-single {
+    @apply translate-x-7 md:translate-x-56;
+  }
+  .hr-multi {
+    @apply translate-x-[215px] md:translate-x-[670px];
+  }
+}

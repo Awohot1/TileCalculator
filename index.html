@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TileCalculator Home </title>
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/styles/style.css">
+  <!-- Tailwind CSS -->
+  <link href="assets/styles/main.css" rel="stylesheet">
+  <!-- Swiper CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/046080561d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="font-sans text-clr-bg-primary">
+  <header class="lg:relative shadow-md shadow-yellow-50 sticky top-0 z-50 bg-white">
+    <nav class="flex justify-between items-center gap-5 p-2 lg:px-0 bg-white  container mx-auto">
+      <div>
+        <a href="index.html">
+          <h3 class="font-bold text-xl font-serif text-clr-heading">Tiles<span class="font-thin">Calculator</span></h3>
+        </a>
+      </div>
+      <div class="hidden lg:block">
+        <ul class="flex justify-between items-center gap-6">
+          <li class="hover:text-clr-tertiary"><a href="index.html">Home</a></li>
+          <li class="hover:text-clr-tertiary"><a href="#calc">Calculator</a></li>
+          <li class="hover:text-clr-tertiary"><a href="#gallery">Gallery</a></li>
+          <li class="hover:text-clr-tertiary"><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div id="menu-btn" class="lg:hidden cursor-pointer">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </div>
+    </nav>
+    <div id="menu-items" class="hidden bg-clr-bg-primary bg-opacity-95  transition-all text-white">
+
+      <ul class="pl-3 w-full">
+        <li class="my-4 p-2 hover:bg-clr-heading hover:pl-7 transition-all"><a class="menu-links "
+            href="index.html">Home</a>
+        </li>
+        <li class="my-4 p-2 hover:bg-clr-heading hover:pl-7 transition-all"><a class="menu-links"
+            href="#calc">Calculator</a>
+        </li>
+        <li class="my-4 p-2 hover:bg-clr-heading hover:pl-7 transition-all"><a class="menu-links"
+            href="#gallery">Gallery</a>
+        </li>
+
+        <li class="my-4 p-2 hover:bg-clr-heading hover:pl-7 transition-all"><a class="menu-links"
+            href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+  </header>
+  <section class="bg-slate-50 relative hero">
+    <article class="mx-auto">
+      <h1 class="font-serif font-bold text-5xl md:text-5xl leading-10 text-white my-5">
+        Welcome to <br>Tiles Calculator</h1>
+      <p class="text-clr-primary mt-2 w-60 md:w-auto text-lg mx-auto">Making your measurement easier and accurate</p>
+      <div class="my-7">
+        <button type="button"
+          class="btn rounded-none w-56 outline-offset-4 outline outline-clr-primary animate-pulse"><a
+            href="#calc">Explore</a></button>
+      </div>
+    </article>
+  </section>
+  <!-- Gallery Section -->
+  <section id="gallery" class="text-center">
+    <h2 class="font-bold text-clr-heading text-3xl font-serif my-5">Gallery</h2>
+    <div class="swiper container fleets py-12">
+      <div class="swiper-wrapper md:grid md:grid-cols-3 md:place-content-center md:gap-6">
+        <!-- Single Image -->
+        <div class="swiper-slide fleet-card bg-white shadow-xl shadow-gray-500 border rounded-sm px-5 py-10">
+          <div><img src="assets/images/tile1.jpg" alt="" class="mx-auto max-w-xl"></div>
+        </div>
+        <!-- Single Image -->
+        <div class="swiper-slide fleet-card bg-white shadow-xl shadow-gray-500 border rounded-sm px-5 py-10">
+          <div><img src="assets/images/tile3.jpg" alt="" class="mx-auto max-w-xl"></div>
+        </div>
+        <!-- Single Image -->
+        <div class="swiper-slide fleet-card bg-white shadow-xl shadow-gray-500 border rounded-sm px-5 py-8">
+          <div><img src="assets/images/tile5.jpg" alt="" class="mx-auto max-w-xl"></div>
+        </div>
+        <!-- Single Image -->
+        <div class="swiper-slide fleet-card bg-white shadow-xl shadow-gray-500 border rounded-sm px-5 py-8">
+          <div><img src="assets/images/tile6.jpg" alt="" class="mx-auto max-w-xl"></div>
+        </div>
+        <!-- Single Image -->
+        <div class="swiper-slide fleet-card bg-white shadow-xl shadow-gray-500 border rounded-sm px-5 py-8">
+          <div><img src="assets/images/tile7.jpg" alt="" class="mx-auto max-w-xl"></div>
+        </div>
+        <!-- Single Image -->
+        <div class="swiper-slide fleet-card bg-white shadow-xl shadow-gray-500 border rounded-sm px-5 py-8">
+          <div><img src="assets/images/tile8.jpg" alt="" class="mx-auto max-w-xl"></div>
+        </div>
+        <!-- Single Image -->
+        <div class="swiper-slide fleet-card bg-white shadow-xl shadow-gray-500 border rounded-sm px-5 py-8">
+          <div><img src="assets/images/tile9.jpg" alt="" class="mx-auto max-w-xl"></div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <!-- Calculator Section -->
+  <section id="calc" class="bg-clr-primary relative">
+    <article class="container mt-4 text-center py-5 md:mx-auto">
+      <div class="flex items-center justify-evenly">
+        <h2 class="single font-bold text-clr-heading text-lg font-serif cursor-pointer">Single Measurement</h2>
+        <h2 class="multiple font-bold text-clr-heading text-lg font-serif cursor-pointer">Multiple Measurement</h2>
+      </div>
+      <hr class="hr-single w-32 md:w-60 bg-clr-heading h-1 mb-5 transition-transform">
+      <div class="text-center mb-3">
+        <select name="Unit" id="unit" class="w-60 md:w-72 mx-auto p-2">
+          <option value="0">Select your unit</option>
+          <option value="1">Centimeter(Cm)</option>
+          <option value="2">Metre(M)</option>
+          <option value="3">Feet(Ft)</option>
+          <option value="4">Inches(In)</option>
+        </select>
+        <p class="warning hidden" id="unit-warning"> Please Select A Unit</p>
+      </div>
+      <div class="text-center border-solid border-2 rounded-lg overflow-x-clip relative overflow-y-auto">
+        <!-- Single Measurement -->
+        <div class="transition-transform" id="single-measurement">
+          <form action="" class="md:grid grid-cols-2 text-center px-2">
+            <fieldset class="text-left">
+              <label for="apartment" class="text-clr-heading text-lg ">
+                Apartment:
+              </label>
+              <input type="text" name="apartment" id="apartment" placeholder="Apartment"
+                class="block w-80 mx-auto rounded-sm outline-none p-2">
+            </fieldset>
+            <fieldset class="text-left">
+              <label for="length" class="text-clr-heading text-lg">
+                Length:
+              </label>
+              <input type="number" name="length" id="length" placeholder="Length" required
+                class="block w-80 mx-auto rounded-sm outline-none p-2">
+            </fieldset>
+            <fieldset class="text-left">
+              <label for="breadth"" class=" text-clr-heading text-lg">
+                Breadth/Height:
+              </label>
+              <input type="number" name="breadth" id="breadth" placeholder="Breadth" required
+                class="block w-80 mx-auto rounded-sm outline-none p-2">
+            </fieldset>
+            <fieldset class="mb-5">
+              <legend class="text-clr-heading text-lg text-left">Tile Dimension: </legend>
+              <div class="grid grid-cols-3 place-content-center text-center mx-auto w-80">
+
+                <input type="number" id="tile-dim1" name="other-dim" placeholder="length" class="p-2 outline-none w-28"
+                  required>
+                <span class="w-8 ml-12"> by</span>
+                <input type="number" id="tile-dim2" name="other-dim" placeholder="breadth/height"
+                  class="p-2 outline-none w-28" required>
+              </div>
+            </fieldset>
+            <p class="warning hidden text-left" id="form-warning"> Please input a valid dimension</p>
+            <button type="button" class="btn calc col-span-2 md:mx-auto md:w-52" name="calculate">Calculate</button>
+          </form>
+        </div>
+        <!-- Multiple Measurement -->
+        <div class="text-center md:text-left absolute w-full top-0 -translate-x-full transition-transform"
+          id="multiple-measurement">
+          <table class="my-table w-full text-center align-top border-2 border-collapse rounded-md">
+            <tr>
+              <th class="w-[70px]  bg-gradient-to-r from-clr-tertiary to-clr-heading">Apartment</th>
+              <th class="w-[70px] bg-gradient-to-r from-clr-tertiary to-clr-heading">Length</th>
+              <th class="w-[70px] bg-gradient-to-r from-clr-tertiary to-clr-heading">Breadth/Height</th>
+              <th class="w-[70px] bg-gradient-to-r from-clr-tertiary to-clr-heading">Tile Size</th>
+            </tr>
+
+            <tr class="multiple-table align-middle">
+              <td class=""><input type="text" id="apartment" placeholder="Apartment" class="w-[70px] md:w-8/12 md:p-2"
+                  required>
+              </td>
+              <td class=""><input type="number" id="length" placeholder="Length" class="w-[70px]  md:w-8/12 md:p-2"
+                  required>
+              </td>
+              <td class=""><input type="number" id="breadth" placeholder="Breadth" class="w-[90px] md:w-8/12 md:p-2"
+                  required>
+              </td>
+              <td class="w-[70px]"><input type="number" id="tile-dim1" class="w-6 md:w-1/3 md:p-2""> by <input type="
+                  number" id="tile-dim2" class="w-6 md:w-1/3 md:p-2"" required>
+            </td>
+          </tr>
+          <tr class=" multiple-table align-middle">
+              <td class=""><input type="text" id="apartment" placeholder="Apartment" class="w-[70px]  md:w-8/12 md:p-2"
+                  required></td>
+              <td class=""><input type="number" id="length" placeholder="Length" class="w-[70px]  md:w-8/12 md:p-2"
+                  required>
+              </td>
+              <td class=""><input type="number" id="breadth" placeholder="Breadth" class="w-[90px] md:w-8/12 md:p-2"
+                  required>
+              </td>
+              <td class="w-[70px]"><input type="number" id="tile-dim1" class="w-6 md:w-1/3 md:p-2"> by <input
+                  type="number" id="tile-dim2" class="w-6  md:w-1/3 md:p-2" required>
+              </td>
+            </tr>
+          </table>
+          <div class="text-center">
+
+            <button type="button" id="add-more" name="add more" class="btn mr-5 mt-5 mx-auto md:w-60">Add More</button>
+            <button type="button" id="calc-multi" name="calculate" class="btn mx-auto md:w-60">Calculate</button>
+          </div>
+        </div>
+      </div>
+
+    </article>
+  </section>
+
+  <section class=" text-center result flex justify-center items-center relative flex-wrap">
+    <div class="container">
+
+      <h2 class="font-bold text-clr-primary text-3xl font-serif my-5">Result</h2>
+
+      <!-- Single Result Section -->
+      <article class="text-center mx-auto text-clr-tertiary" id="single-result">
+
+      </article>
+      <!-- Multiple Result Section -->
+      <article class="mx-auto py-10">
+        <table class="result-table table-auto text-center w-full border border-gray-600">
+
+
+        </table>
+      </article>
+    </div>
+  </section>
+
+  <section class="clr-bg-primary">
+
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="text-center py-10">
+    <h2 class="font-bold text-clr-heading text-3xl font-serif my-5">Contact</h2>
+    <form action="https://formspree.io/f/xv0jyrlr" method="post"
+      class="bg-slate-300 w-11/12 mx-auto py-8 px-2 max-w-xl">
+      <input type="text" name="name" placeholder="Your Name" autocomplete="name"
+        class="outline-none bg-white w-11/12 p-3 my-2">
+      <input type="email" name="email" placeholder="Email" autocomplete="email"
+        class="outline-none bg-white w-11/12 p-3 my-2">
+
+      <textarea name="message" id="message" rows="5"
+        class="outline-none bg-white w-11/12 p-3 my-2 text-clr-text text-opacity-50">
+  Message
+      </textarea>
+      <button type="submit"
+        class="block w-1/2 bg-clr-heading text-white uppercase py-2 px-4 hover:text-clr-text mx-auto">Send</button>
+    </form>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-clr-bg-primary text-white py-5">
+    <article class="container text-center md:grid md:grid-cols-3 md:justify-between md:gap-x-20 mx-auto">
+      <div class="md:text-left md:w-1/3">
+        <h3 class="font-bold text-4xl font-serif text-clr-heading my-5">Tile<span class="font-thin">Calculator</span>
+        </h3>
+        <p class="w-64 mx-auto mb-5 md:ml-0">We are known for accurate and precise tiles calculation. We are
+          simply
+          the
+          best you can find.</p>
+        <p class="w-64 mx-auto mb-5 md:ml-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+          reiciendis
+          eius, at
+          voluptatem perferendis
+          id.</p>
+      </div>
+      <div class="">
+        <h3 class="font-sans text-2xl text-clr-heading my-5">News Letter</h3>
+        <p class="w-64 mx-auto mb-5">Subscribe to our news letter for news and exclusive updates.</p>
+        <div class="md:flex md:justify-between md:items-center gap-3">
+
+          <input type="email" name="email" placeholder="Email" autocomplete="email"
+            class="outline-none bg-white w-64 p-3 my-4">
+          <button type="button"
+            class="block md:inline-block w-36 bg-clr-heading text-white py-3 px-4 hover:text-clr-text mx-auto">Subscribe</button>
+        </div>
+      </div>
+      <div class="md:text-left md:w-1/3 mx-auto">
+        <h3 class="font-sans text-2xl text-clr-heading my-5 mx-auto">Contact</h3>
+        <div class="grid justify-center gap-y-5 md:justify-start">
+
+          <div class="flex items-center justify-center gap-4">
+            <i class="fa-solid fa-location-dot fa-xl"></i>
+            <p class="text-left text-lg">
+              New Garage, Ibadan, <br> Oyo State, Nigeria
+            </p>
+          </div>
+          <div class="flex items-center justify-start gap-4">
+            <i class="fa-solid fa-phone fa-xl"></i>
+            <p class="text-left text-lg">
+              +234-8135227068
+            </p>
+          </div>
+          <div class="flex items-center justify-center gap-4">
+            <i class="fa-solid fa-envelope fa-xl"></i>
+            <p class="text-left text-lg">
+              info@tilescalculator.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </article>
+    <div class="flex place-content-center gap-8 py-10">
+      <i class="fa-brands fa-facebook fa-2xl hover:text-clr-tertiary cursor-pointer"></i>
+      <i class="fa-brands fa-x-twitter fa-2xl hover:text-clr-tertiary cursor-pointer"></i>
+      <i class="fa-brands fa-instagram fa-2xl hover:text-clr-tertiary cursor-pointer"></i>
+    </div>
+    <div class="container text-center mx-auto">
+      <hr class="w-11/12 bg-white mx-auto md:w-full">
+      <p class="text-sm">&copy; Copyright <span id="date"> </span> . TilesCalculator All rights reserved</p>
+    </div>
+  </footer>
+  <!-- Swiper Js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- <script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+    const swiper = new Swiper(...)
+  </script> -->
+  <!-- My Script -->
+  <script src="app.js"></script>
+</body>
+
+</html>
