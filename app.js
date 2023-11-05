@@ -75,47 +75,47 @@ function product(x, y) {
 calc.addEventListener("click", (e) => {
   e.preventDefault();
   const unit = document.getElementById("unit");
-  // const apartment = document.getElementById("apartment").value;
-  // let length = Number(document.getElementById("length").value);
-  // let breadth = Number(document.getElementById("breadth").value);
-  // let tileDiml = Number(document.getElementById("tile-dim1").value);
-  // let tileDimb = Number(document.getElementById("tile-dim2").value);
-  // //equate unit value to selected index
-  // let unitValue = Number(unit.value);
-  // unit.addEventListener("change", () => (unitValue = unit.selectedIndex));
-  // let tileDim1, tileDim2;
+   const apartment = document.getElementById("apartment").value;
+  let length = Number(document.getElementById("length").value);
+   let breadth = Number(document.getElementById("breadth").value);
+   let tileDiml = Number(document.getElementById("tile-dim1").value);
+   let tileDimb = Number(document.getElementById("tile-dim2").value);
+   //equate unit value to selected index
+   let unitValue = Number(unit.value);
+   unit.addEventListener("change", () => (unitValue = unit.selectedIndex));
+   let tileDim1, tileDim2;
 
-  // switch (unitValue) {
-  //   case 0:
-  //     unitWarning.classList.remove("hidden");
-  //     console.log("Please select a unit");
-  //     break;
-  //   case 1:
-  //     length = length;
-  //     breadth = breadth;
-  //     tileDim1 = tileDiml;
-  //     tileDim2 = tileDimb;
-  //     break;
-  //   case 2:
-  //     length = length * 100;
-  //     breadth = breadth * 100;
-  //     tileDim1 = tileDiml * 100;
-  //     tileDim2 = tileDimb * 100;
-  //     break;
-  //   case 3:
-  //     length = length * 30.48;
-  //     breadth = breadth * 30.48;
-  //     tileDim1 = tileDiml * 30.48;
-  //     tileDim2 = tileDimb * 30.48;
-  //     break;
-  //   case 4:
-  //     length = length * 2.54;
-  //     breadth = breadth * 2.54;
-  //     tileDim1 = tileDiml * 2.54;
-  //     tileDim2 = tileDimb * 2.54;
-  //     break;
-  //   default:
-  // }
+  switch (unitValue) {
+     case 0:
+      unitWarning.classList.remove("hidden");
+      console.log("Please select a unit");
+      break;
+     case 1:
+      length = length;
+      breadth = breadth;
+      tileDim1 = tileDiml;
+      tileDim2 = tileDimb;
+      break;
+   case 2:
+       length = length * 100;
+     breadth = breadth * 100;
+      tileDim1 = tileDiml * 100;
+      tileDim2 = tileDimb * 100;
+      break;
+    case 3:
+      length = length * 30.48;
+      breadth = breadth * 30.48;
+   tileDim1 = tileDiml * 30.48;
+      tileDim2 = tileDimb * 30.48;
+      break;
+     case 4:
+      length = length * 2.54;
+     breadth = breadth * 2.54;
+      tileDim1 = tileDiml * 2.54;
+     tileDim2 = tileDimb * 2.54;
+      break;
+   default:
+   }
 
   let result = product(length, breadth);
   let tileDim = product(tileDim1, tileDim2);
